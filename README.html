@@ -1,10 +1,10 @@
 <script runat='server'>
     Platform.Load('core', '1');
-    grant_type=client_credentials
+    var grant_type='client_credentials';
     var headerNames = ("Authorization");
     var headerValues = ("Bearer", apitoken);
 
     var url = 'https://271-DJN-199.mktorest.com/identity/oauth/token?grant_type=client_credentials&client_id=bc7e6464-214a-4863-a1a2-3bd90c2ca54a&client_secret=vuyTeSyzlj2V78pVVyOcsjGiiEsWJkt1';
-    var response = HTTP.Get(url,false,1, [], []);
-    Platform.Response.Write(response);
+    var response = HTTP.Get(url,false,1,[],[]);
+   // Platform.Response.Write(response);
 </script>
